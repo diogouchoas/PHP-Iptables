@@ -23,7 +23,8 @@ if ($username != NULL && $password != NULL){
 			}
 		}
 		if($groupmember == false){
-			echo "<script> window.location = 'loginSel.php?erro=2'; </script>" ;
+                        header('Location: loginSel.php?erro=2');
+                        //echo "<script> window.location = 'loginSel.php?erro=2'; </script>" ;
 		}
 		if($groupmember == true){
 			session_start();
@@ -38,11 +39,13 @@ if ($username != NULL && $password != NULL){
 		
 	}
 	else{
-		echo "<script> window.location = 'loginSel.php?erro=1'; </script>" ;
+                header('Location: loginSel.php?erro=1');
+		//echo "<script> window.location = 'loginSel.php?erro=1'; </script>" ;
 	}
 }
 else{
-	echo "<script> window.location = 'loginSel.php'; </script>" ;
+        header('Location: loginSel.php');
+	//echo "<script> window.location = 'loginSel.php'; </script>" ;
 }
 
 ?>

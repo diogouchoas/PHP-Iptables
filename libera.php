@@ -41,20 +41,23 @@ if(isset($_SESSION['username'])){
 				echo "<span class=\"sub\">".$saida."</span>";
 			}
 			else{
-				echo "<script> window.location = 'firewall.php?erro=2'; </script>" ;
+                                header('Location: firewall.php?erro=2');
+				//echo "<script> window.location = 'firewall.php?erro=2'; </script>" ;
 			}
 		}
 		else{
-			echo "<script> window.location = 'firewall.php?erro=1'; </script>" ;
-			//header('Location: firewall.php?erro=1');
+                        //echo "<script> window.location = 'firewall.php?erro=1'; </script>" ;
+			header('Location: firewall.php?erro=1');
 		}
 	}
 	else{
-		echo "<script> window.location = 'firewall.php?erro=3'; </script>" ;
+                header('Location: firewall.php?erro=3');
+               //echo "<script> window.location = 'firewall.php?erro=3'; </script>" ;
 	}
 }
 else{
-	echo "<script> window.location = 'loginSel.php'; </script>" ;
+        header('Location: loginSel.php');
+	//echo "<script> window.location = 'loginSel.php'; </script>" ;
 }
 ?>
 

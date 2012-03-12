@@ -1,4 +1,5 @@
 <?php
+        ob_start();
 	session_start();
 	if(!isset($_SESSION['username'])){
 		require_once('header.html');
@@ -72,6 +73,7 @@
 <?php
 	}
 else{
+        header('Location: firewall.php');
 	echo "<script> window.location = 'firewall.php'; </script>" ;
 }
   

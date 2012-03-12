@@ -4,7 +4,8 @@
 	$now = time(); // checking the time now when home page starts
    	if($now > $_SESSION['expire']){
 		session_destroy();
-        echo "<script> window.location = 'loginSel.php?erro=3'; </script>" ;
+                header('Location: loginSel.php?erro=3');
+                //echo "<script> window.location = 'loginSel.php?erro=3'; </script>" ;
     }
 	if(isset($_SESSION['username'])){
 		$username=$_SESSION['username'];
@@ -83,7 +84,8 @@
 			<?php
 			}
 			else{
-				echo "<script> window.location = 'loginSel.php'; </script>" ;
+				header('Location: loginSel.php');
+                                //echo "<script> window.location = 'loginSel.php'; </script>" ;
 			}
 				
 			?>
