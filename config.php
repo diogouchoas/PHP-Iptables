@@ -1,9 +1,9 @@
 <?php
 
 $config_array = array(
-	'account_suffix' => "@anima.intranet",
-	'base_dn' =>	"DC=anima,DC=intranet",
-	'domain_controllers' => array("172.17.2.10"),
+	'account_suffix' => "@local.domain",
+	'base_dn' =>	"DC=local,DC=domain",
+	'domain_controllers' => array("192.168.1.10"),
 	'access_group' => "firewall.system",
 	'session_expire' => 5
 );
