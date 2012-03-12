@@ -47,5 +47,5 @@ else{
         header('Location: loginSel.php');
 	//echo "<script> window.location = 'loginSel.php'; </script>" ;
 }
-
+ob_flush();
 ?>

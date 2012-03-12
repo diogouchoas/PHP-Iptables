@@ -87,8 +87,9 @@
 				header('Location: loginSel.php');
                                 //echo "<script> window.location = 'loginSel.php'; </script>" ;
 			}
-				
 			?>
 	</body>
 </html>
-  
+<?php
+    ob_flush();
+?>

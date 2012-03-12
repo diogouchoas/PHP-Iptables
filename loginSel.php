@@ -74,6 +74,7 @@
 	}
 else{
         header('Location: firewall.php');
-	echo "<script> window.location = 'firewall.php'; </script>" ;
+	//echo "<script> window.location = 'firewall.php'; </script>" ;
 }
-  
+ob_flush();
+  ?>

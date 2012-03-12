@@ -4,5 +4,5 @@
     session_start();
 	session_destroy();
 	header('Location: loginSel.php');
-
+ob_flush();
 ?>
