@@ -39,7 +39,7 @@ class adLDAP {
     * 
     * @var string
     */   
-	//protected $accountSuffix = "@anima.intranet";
+
     protected $accountSuffix;
     /**
     * The base dn for your domain
@@ -48,7 +48,7 @@ class adLDAP {
     * 
     * @var string
     */
-	//protected $baseDn = "DC=anima,DC=intranet"; 
+
     protected $baseDn;
     /** 
     * Port used to talk to the domain controllers. 
@@ -63,7 +63,7 @@ class adLDAP {
     * 
     * @var array
     */
-//    protected $domainControllers = array("172.17.2.10");
+
 	protected $domainControllers;
     /**
     * Optional account with higher privileges for searching
