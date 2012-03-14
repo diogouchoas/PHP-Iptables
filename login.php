@@ -33,7 +33,7 @@ if ($username != NULL && $password != NULL){
 			$_SESSION["username"] = $username;	
 			//$_SESSION["usergroups"] = $usergroups;
 			$_SESSION["displayname"] = $displayname[0]['displayname'][0];
-			$redir = "Location: http://" . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . "firewall.php";
+			$redir = "Location: firewall.php";
 			header($redir);
 		}
 		
