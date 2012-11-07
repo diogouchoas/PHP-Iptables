@@ -6,7 +6,7 @@
 		session_destroy();
                 header('Location: loginSel.php?erro=3');
                 //echo "<script> window.location = 'loginSel.php?erro=3'; </script>" ;
-    }
+    	}
 	if(isset($_SESSION['username'])){
 		$username=$_SESSION['username'];
 		require_once('header.html');
@@ -85,7 +85,7 @@
 			}
 			else{
 				header('Location: loginSel.php');
-                                //echo "<script> window.location = 'loginSel.php'; </script>" ;
+                                
 			}
 			?>
 	</body>
